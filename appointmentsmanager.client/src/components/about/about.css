@@ -1,0 +1,17 @@
+ul {
+    list-style-type:none
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightblue;
+    width: -webkit-fill-available;
+}
+
+ul li {
+    display: inline;
+    margin:10px;
+    padding:10px;
+}
