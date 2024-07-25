@@ -11,5 +11,7 @@
   <ItemGroup>
     <Folder Include="public\" />
     <Folder Include="src\assets\" />
+    <Folder Include="src\common\" />
+    <Folder Include="src\components\MainHeader\" />
   </ItemGroup>
 </Project>

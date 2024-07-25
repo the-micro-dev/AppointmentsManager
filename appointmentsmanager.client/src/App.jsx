@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { Navbar } from "./components/MainNavBar/MainNavBar"
-import { About } from "./components/About/About"
+import  Page1  from "./components/page1/page1"
 import { Route, Routes } from "react-router-dom";
+import { MainHeader } from "./components/MainHeader/MainHeader"
 
 function App() {
     return (
-        <div>
+        <div className="main-app-container">
+            <MainHeader></MainHeader>
             <Navbar></Navbar>
             <Routes>
-                <Route path="/about" element={ <About/> } />
+                <Route path="/page1" element={<Page1 />} />
             </Routes>
         </div>
     );

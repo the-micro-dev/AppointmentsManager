@@ -1,17 +1,24 @@
 ul {
-    list-style-type:none
+    list-style-type:none;
+    display:contents;
 }
 
-nav {
+.main-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: lightblue;
+    background: rgba(3,56,119,255);
     width: -webkit-fill-available;
 }
 
-ul li {
+.active {
+    font-weight: bold;
+    background: rgb(9,20,44);
+}
+
+a {
     display: inline;
-    margin:10px;
-    padding:10px;
+    padding: 10px;
+    color: white;
+    text-decoration:none;
 }

@@ -1,3 +1,14 @@
-﻿.App{
+﻿.App {
+}
 
+body {
+   
+}
+
+.main-app-container {
+    border: 2px solid grey;
+    box-shadow: 5px 5px 5px 5px grey;
+    width: -webkit-fill-available; /*100%; /* Ensure full width */
+    height: 100vh; /* Ensure full viewport height */
+    margin: 8px;
 }
