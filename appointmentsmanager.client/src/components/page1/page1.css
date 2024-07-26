@@ -3,10 +3,12 @@
     border: 3px solid rgba(3, 56, 119, 255);
 }
 
-    .page1 h4 {
-        background: rgba(3,56,119,255);
-        color: white;
-        margin:0px;
-        padding:5px;
-        margin-bottom:5px;
-    }
+.sub-navbar{
+    background: rgba(3,56,119,255);
+    color: white;
+    display:flex;
+}
+li{
+    margin-right:5px;
+    padding:5px;
+}

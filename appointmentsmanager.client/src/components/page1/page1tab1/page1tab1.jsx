@@ -33,7 +33,6 @@ export const Page1Tab1 = () => {
                     </tbody>
                 </table>
             </div>
-            );
     </p >
     );
 }

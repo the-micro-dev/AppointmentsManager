@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
 import './page1.css'
 import { Page1Tab1 } from './page1tab1/page1tab1'
 import { Page1Tab2 } from './page1tab2/page1tab2'
@@ -12,14 +11,28 @@ const Page1 = () => {
     };
 
     return (
-        <div class="page1">
-            <h4>Page 1 Content</h4>
+        <div className="page1">
             <div className="sub-navbar">
-                <button onClick={() => handleTabChange('subcontent1')} className={activeTab === 'subcontent1' ? 'active-link' : ''}>Subcontent 1</button>
-                <button onClick={() => handleTabChange('subcontent2')} className={activeTab === 'subcontent2' ? 'active-link' : ''}>Subcontent 2</button>
-                <button>Subcontent 3</button>
-                <button>Subcontent 4</button>
-                <button>Subontent 5</button>
+                    <ul>
+                        <li
+                            className={activeTab === 'subcontent1' ? 'active' : ''}
+                            onClick={() => handleTabChange('subcontent1')}
+                        >
+                            Sub Item 1
+                        </li>
+                        <li
+                            className={activeTab === 'subcontent2' ? 'active' : ''}
+                            onClick={() => handleTabChange('subcontent2')}
+                        >
+                            Sub Item 2
+                        </li>
+                        <li
+                            className={activeTab === 'subcontent3' ? 'active' : ''}
+                            onClick={() => handleTabChange('subcontent3')}
+                        >
+                            Sub Item 3
+                        </li>
+                    </ul>
             </div>
             <div className="subcontent">
                 {activeTab === 'subcontent1' && <Page1Tab1 />}
